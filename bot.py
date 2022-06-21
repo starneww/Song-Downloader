@@ -52,36 +52,36 @@ CMDS_TEXT = """
 """
 
 ABOUT_TEXT = """
-- **Bot :** `Song Downloader`
-- **Creator :** [MR-JINN-OF-TG](https://Github.com/MR-JINN-OF-TG)
-- **Support :** [CLICK HERE](https://telegram.me/NAZRIYASUPPORT)
-- **Source :** [CLICK HERE](https://github.com/MR-JINN-OF-TG/Song-Downloader)
-- **Language :** [Python3](https://python.org)
-- **Library :** [Pyrogram](https://pyrogram.org)
-- **Server :** [Heroku](https://heroku.com)
+- **⚡Bot :** `Song Downloader`
+- **😈 Creator :** [༒ Glitch ༒](https://t.me/robo_glitch)
+- **📮 Support :** [CLICK HERE](https://telegram.me/dubbedweb)
+- **📣 Channel :** [CLICK HERE](https://t.me/hddubhub4u)
+- **🔮 Other Bots :** [List Here](https://t.me/futurebackups)
+- **🎥Channels List:** [Find HERE](https://t.me/futurebackups)
+- **🛠 Version :** [V-2022][V.11 2022 Updated]
 
 """
 START_BUTTONS = InlineKeyboardMarkup(
         [[
-        InlineKeyboardButton('Support📕', url=f"https://telegram.me/{Config.SUPPORT}"), 
-        InlineKeyboardButton(text="SEARCH🔎", switch_inline_query_current_chat="")
+        InlineKeyboardButton('📮 SUPPORT', url=f"https://telegram.me/{Config.SUPPORT}"), 
+        InlineKeyboardButton(text="🔍 SEARCH", switch_inline_query_current_chat="")
         ],[
-        InlineKeyboardButton('HELP & USAGE⚙️', callback_data ='cmds') 
+        InlineKeyboardButton('❓ HELP & USAGE⚙️', callback_data ='cmds') 
         ],[
-        InlineKeyboardButton('ABOUT📕', callback_data='about'),
-        InlineKeyboardButton('CLOSE🔐', callback_data='close')
+        InlineKeyboardButton('😈 ABOUT', callback_data='about'),
+        InlineKeyboardButton('🔐 CLOSE', callback_data='close')
         ]]
     )
 CMDS_BUTTONS = InlineKeyboardMarkup(
         [[
-        InlineKeyboardButton('HOME🏡', callback_data='home'),
-        InlineKeyboardButton('CLOSE🔐', callback_data='close')
+        InlineKeyboardButton('HOME 🏡', callback_data='home'),
+        InlineKeyboardButton('CLOSE 🔐', callback_data='close')
         ]]
     )
 ABOUT_BUTTONS = InlineKeyboardMarkup(
         [[
-        InlineKeyboardButton('HOME🏡', callback_data='home'),
-        InlineKeyboardButton('CLOSE🔐', callback_data='close')
+        InlineKeyboardButton('HOME 🏡', callback_data='home'),
+        InlineKeyboardButton('CLOSE 🔐', callback_data='close')
         ]]
     )
 
@@ -163,7 +163,7 @@ def a(client, message):
     for i in message.command[1:]:
         query += ' ' + str(i)
     print(query)
-    m = message.reply('`Searching... Please Wait...`')
+    m = message.reply('`🕵Searching... Please Wait 😎`')
     ydl_opts = {"format": "bestaudio[ext=m4a]"}
     try:
         results = []
@@ -208,7 +208,7 @@ def a(client, message):
             info_dict = ydl.extract_info(link, download=False)
             audio_file = ydl.prepare_filename(info_dict)
             ydl.process_info(info_dict)
-        rep = f'🎶 <b>Title:</b> <a href="{link}">{title}</a>\n⌚ <b>Duration:</b> <code>{duration}</code>\n📻 <b>Uploaded By:</b> <a href="https://t.me/mwklinks">MwK Song Bot</a>'
+        rep = f'🎶 <b>Title:</b> <a href="{link}">{title}</a>\n⌚ <b>Duration:</b> <code>{duration}</code>\n📻 <b>Uploaded By:</b> <a href="https://t.me/YouTubeMixDLBot">Youtube MixDL Bot</a>'
         secmul, dur, dur_arr = 1, 0, duration.split(':')
         for i in range(len(dur_arr)-1, -1, -1):
             dur += (int(dur_arr[i]) * secmul)
@@ -216,7 +216,7 @@ def a(client, message):
         message.reply_audio(audio_file, caption=rep, parse_mode='HTML',quote=False, title=title, duration=dur, performer=performer, thumb=thumb_name)
         m.delete()
     except Exception as e:
-        m.edit('**An internal Error Occured, Report This @redbullfed!!**')
+        m.edit('**An internal Error Occured, Report This @robo_glitch!!**')
         print(e)
     try:
         os.remove(audio_file)
