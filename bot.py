@@ -28,25 +28,25 @@ Bot = Client(
 db = Database()
 
 START_TEXT = """ `Hai {}, 
-Am a YouTube Downloader Bot I Can Download Songs,Videos and Lyrics From YouTube and lyrics and  Would upload into Telegram. 
-Use /help Commands For More.`
+Am a YouTube Downloader Bot I Can Download Songs,Videos and Lyrics From YouTube and  Would upload into Telegram Instantly. 
+Use /help Commands For More Info \n Powered B❕@robo_glitch 😈`
 """
 
 CMDS_TEXT = """
 `Here It is The List of Commamds and Its usage.`
 
-- /song - This Command is For Downloading Songs. 
-- /lyrics - This Command is For Scrapping Lyrics of a Song. 
-- /video - This Command is For Downloading Videos. 
-- Also You Can search videos via inline Mode on Bot. 
+- /song - This Command is For Downloading Songs 🎵
+- /lyrics - This Command is For Scrapping Lyrics of a Song 📄
+- /video - This Command is For Downloading Videos 🎥
+- Also You Can search videos via inline Mode on Bot 💡
 
-`Exmples For Both Those Commands.`
+`❤ Exmples For Both Those Commands 🛠`
 
-- /song [song name] or [youTube link]. 
-  [/song Alone]. 
-- /lyrics [song name]. 
+- /song [song name] or [youTube link] 🎵
+  [/song Alone] 
+- /lyrics [song name] 📄
   [/lyrics alone] 
-- /video [video name] or [YouTube link] 
+- /video [video name] or [YouTube link] 🎥
   [/video Alone] 
   
 """
